@@ -1,7 +1,7 @@
 module.exports = {
-  title: '知码学院',
-  description: '君哥带你上王者',
-  dest: '/dist',
+  title: '小熊学院',
+  description: '小熊带你学Java',
+  dest: './dist',
   port: '7777',
   head: [
     ['link', {rel: 'icon', href: '/logo.jpg'}]
@@ -10,9 +10,21 @@ module.exports = {
     lineNumbers: true
   },
   themeConfig: {
-    nav: [{
-      text: '懵逼指南', link: '/guide/'
-    }],
+    nav: [
+      {
+        text: '懵逼指南', link: '/guide/',
+      },
+      {
+        text: 'Java', link: '/views/java/', icon: 'reco-document',
+        items:[
+          {text: '数据结构与算法', link: '/views/java/dataConstructure/',icon: ''},
+          {text: 'JavaSE', link: '/views/java/javase/',icon: ''},
+          {text: 'JavaWeb', link: '/views/java/web/',icon: ''},
+          {text: 'mysql', link: '/views/java/mysql/',icon: ''},
+          {text: 'spring', link: '/views/java/spring/',icon: ''},
+        ]
+      },
+    ],
     sidebar: {'/guide/':[
         {
           title:'新手指南',
