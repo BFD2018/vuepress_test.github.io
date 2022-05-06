@@ -1,7 +1,7 @@
 module.exports = {
   title: '小熊学院',
   description: '小熊带你学Java',
-  base:".",
+  base:"./",
   dest: 'dist',
   port: '7777',
   head: [
