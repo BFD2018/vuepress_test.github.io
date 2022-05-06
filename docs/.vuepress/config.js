@@ -1,8 +1,6 @@
 module.exports = {
-  title: '小熊学院',
+  title: '小熊学Java',
   description: '小熊带你学Java',
-  base:"./",
-  dest: 'dist',
   port: '7777',
   head: [
     ['link', {rel: 'icon', href: '/logo.jpg'}],
