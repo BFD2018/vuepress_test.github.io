@@ -1,11 +1,12 @@
 module.exports = {
   title: '小熊学院',
   description: '小熊带你学Java',
-  base:"/dist/",
-  dest: './dist',
+  base:".",
+  dest: 'dist',
   port: '7777',
   head: [
-    ['link', {rel: 'icon', href: '/logo.jpg'}]
+    ['link', {rel: 'icon', href: '/logo.jpg'}],
+    ["link", { rel: "stylesheet", href: "/iconfont/iconfont.css" }],
   ],
   markdown: {
     lineNumbers: true
@@ -13,30 +14,22 @@ module.exports = {
   themeConfig: {
     nav: [
       {
-        text: '懵逼指南', link: '/guide/',
+        text: '作者首页', link: '/views/guide/',
       },
       {
-        text: 'Java', link: '/views/java/', icon: 'reco-document',
+        text: 'Java', icon: "icon-shouye",
         items:[
-          {text: '数据结构与算法', link: '/views/java/dataConstructure/',icon: ''},
-          {text: 'JavaSE', link: '/views/java/javase/',icon: ''},
-          {text: 'JavaWeb', link: '/views/java/web/',icon: ''},
-          {text: 'mysql', link: '/views/java/mysql/',icon: ''},
-          {text: 'spring', link: '/views/java/spring/',icon: ''},
+          {text: '数据结构与算法', link: '/views/java/dataConstructure/',icon: 'iconfont icon-file-text'},
+          {text: 'JavaSE', link: '/views/java/javase/',icon: 'iconfont icon-paihangbang'},
+          {text: 'JavaWeb', link: '/views/java/web/',icon: 'iconfont icon-dianying'},
+          {text: 'mysql', link: '/views/java/mysql/',icon: 'iconfont icon-fuzhi'},
+          {text: 'spring', link: '/views/java/spring/',icon: 'iconfont icon-sharpicons_Orca'},
         ]
       },
     ],
-    sidebar: {'/guide/':[
-        {
-          title:'新手指南',
-          collapsable: true,
-          children:[
-            '/guide/notes/one',
-          ]
-        }
-      ]
-    },
+
     sidebarDepth: 2,
+    sidebar: "auto",
     lastUpdated: 'Last Updated',
     searchMaxSuggestoins: 10,
     serviceWorker: {
